@@ -1,0 +1,73 @@
+body{
+    font-family: Inconsolata, Helvetica, sans-serif;
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    font-size: 25px;
+    color: 	#130357;
+    text-transform: uppercase;
+  }
+  h1:hover, h3:hover, h5:hover{
+    letter-spacing: 1.5rem;
+  }
+  header {
+    background-color: #BBBFFF;
+    border: 2px solid #BBBBBB;
+    box-shadow: 0 10px 5px #BBBCCC;
+    text-align: center;
+    align-items: center;
+  }
+  h4{
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+  button {
+    color: white;
+    font-size: 1.5rem;
+    width: 10rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    animation: moveUp 2s, colorCycle 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  button:hover{
+    box-shadow: 0 5px 0 #476685;
+  }
+  #Bato{
+    background-color: #66ff99;
+  }
+  #Papel{
+    background-color: #ffd966;
+  }
+  #Gunting{
+    background-color: #6666ff;
+  }
+  div{
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+  }
+  #rock, #paper, #scissors{
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes rotate{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+  }
+  @keyframes moveUp{
+    0% {transform: translateY(0px);}
+    66% {transform: translateY(-40px);}
+    100% {transform: translateY(0px);}
+  }
+  @keyframes colorCycle{
+    0% {color: blue;}
+    50% {color: yellow;}
+    100% {color: red;}
+  }
+  
